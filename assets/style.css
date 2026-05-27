@@ -46,6 +46,7 @@ background-color: var(--clr-bg);
 color: var(--clr-text); 
 line-height: 1.7; 
 font-size: 16px; 
+background-image: url(snoopy.jpg);
 } 
 
 a { 
@@ -58,24 +59,24 @@ list-style: none; /* Remove default bullet points */
 } 
 
 /* ---------------------------------------------------------------- 
-  5. HEADER & NAVIGATION 
-   ---------------------------------------------------------------- 
-   position: sticky keeps the header visible as you scroll. 
-   The navbar uses FLEXBOX to place logo left, links right. 
+ 5. HEADER & NAVIGATION 
+ ---------------------------------------------------------------- 
+ position: sticky keeps the header visible as you scroll. 
+ The navbar uses FLEXBOX to place logo left, links right. 
 ---------------------------------------------------------------- */ 
 header { 
  position: sticky; 
 top: 0; 
 z-index: 100; 
 background-color: rgba(6, 6, 84, 0.92); 
-backdrop-filter: blur(12px);           /* Frosted glass effect   */ 
+backdrop-filter: blur(12px);      /* Frosted glass effect  */ 
 border-bottom: 1px solid var(--clr-border); 
 } 
 .navbar { 
-/* FLEXBOX: places .logo and .nav-links on the same row      */ 
+/* FLEXBOX: places .logo and .nav-links on the same row   */ 
 display: flex; 
-justify-content: space-between;   /* Logo ←————————→ Links  */ 
-align-items: center;              /* Vertically centred       */ 
+justify-content: space-between;  /* Logo ←————————→ Links */ 
+align-items: center;       /* Vertically centred    */ 
 max-width: 1100px; 
 margin: 0 auto; 
 padding: 18px 24px; 
@@ -138,16 +139,12 @@ transition: width var(--transition);
 /*Defines the banner’s spacing, centering.*/ 
 
 .hero { 
-
   position: relative; 
-
   overflow: hidden; 
-
   padding: 140px 24px 120px; 
-
   text-align: center; 
-
-  background: radial-gradient(ellipse 80% 60% at 50% 0%, #1A0A3A 0%, var(--clr-bg) 70%); 
+ /* background-image: */
+  /*radial-gradient(ellipse 80% 60% at 50% 0%, #1A0A3A 0%, var(--clr-bg) 70%); */
 
 } 
 
